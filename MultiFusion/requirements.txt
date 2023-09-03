@@ -1,0 +1,7 @@
+python = 3.8.15
+pytorch = 1.9.1
+cuda = 11.5
+cuda_driver = 495.44
+numpy = 1.23.5
+tqdm
+clip

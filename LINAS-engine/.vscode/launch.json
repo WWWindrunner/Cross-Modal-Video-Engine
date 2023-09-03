@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: python trainer.py --rootpath /data/fs/hybrid_space_dataset --overwrite 1 --max_violation --text_norm --visual_norm --collection msrvtt10k --visual_feature resnext101-resnet152 --space latent --batch_size 128 --style GT --postfix GT_8 --support_set_number 8",
+            "type": "python",
+            "request": "launch",
+            "program": "trainer.py",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "3"
+            },
+            "console": "integratedTerminal",
+            "args": [
+                "--rootpath",
+                "/data/fs/hybrid_space_dataset",
+                "--overwrite",
+                "1",
+                "--max_violation",
+                "--text_norm",
+                "--visual_norm",
+                "--collection",
+                "msrvtt10k",
+                "--visual_feature",
+                "resnext101-resnet152",
+                "--space",
+                "latent",
+                "--batch_size",
+                "128",
+                "--style",
+                "GT",
+                "--postfix",
+                "GT_8",
+                "--support_set_number",
+                "8"
+            ],
+            "cwd": "/data/fs/LINAS-engine"
+        },
+        {
+            "name": "Python: tester.py --collectionStrt single --testCollection msrvtt10k --rootpath /data/fs/hybrid_space_dataset --overwrite 1 --logger_name student_support_set_8",
+            "type": "python",
+            "request": "launch",
+            "program": "tester.py",
+            "env": {},
+            "console": "integratedTerminal",
+            "args": [
+                "--collectionStrt",
+                "single",
+                "--testCollection",
+                "msrvtt10k",
+                "--rootpath",
+                "/data/fs/hybrid_space_dataset",
+                "--overwrite",
+                "1",
+                "--logger_name",
+                "student_support_set_8"
+            ],
+            "cwd": "/data/fs/LINAS-engine"
+        }
+    ]
+}
