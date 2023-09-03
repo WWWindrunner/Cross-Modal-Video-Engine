@@ -1,6 +1,24 @@
 Implementation of Composed Video Retrieval Task.
 
-Files in the folder:
+# MultiFusion
+
+Implementation of Composed Video Retrieval Task.
+
+## Environments
+
+python = 3.8.15
+pytorch = 1.9.1
+cuda = 11.5
+cuda_driver = 495.44
+numpy = 1.23.5
+tqdm
+clip
+
+## Dataset
+
+TBD.
+
+## Files in the folder:
 (1) dataset/: videos datasebase
         modified_dataset/: our CVR dataset.
         videos/: videos that we need to retrieval.
@@ -14,6 +32,9 @@ Files in the folder:
         utils.py: some utils code.
         validate.py: test code based on modified_dataset.
 
+## Inference
+
+```shell
 Training the code:
     cd scripts
     sh train.sh
@@ -23,4 +44,5 @@ Test the code:
 Inference:
     cd scripts
     sh inference.sh
+```
 
